@@ -18,7 +18,7 @@ const App = () => {
   useEffect(() => {
     const token = localStorage.getItem('auth_token');
     if (window.location.pathname === '/' && token) {
-      navigate('/home');
+      navigate('/');
     }
   }, [navigate]);
 
